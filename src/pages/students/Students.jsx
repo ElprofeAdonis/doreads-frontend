@@ -38,7 +38,7 @@ const Students = () => {
                 and the amount of the penalty."
             TextTitle3="View Students"
             TextParagraph3="In this section you can see
-              all the students registered in the system."></TextDesc>
+              all the students registered in the system. AAGDEVELOPER"></TextDesc>
         </div>
       </div>
     </>
