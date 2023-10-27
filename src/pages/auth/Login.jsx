@@ -7,7 +7,7 @@ import Form from '../../components/Form.jsx';
 import InputLabel from '../../components/Label.jsx';
 import Input from '../../components/Input.jsx';
 import logo from '../../assets/2.svg';
-// import { AuthContext } from '../../context/AuthContext';
+
 const ErrorAlert = (props) => <AlertComp severity="error" message={props.message} color="F53636" />;
 const WarningAlert = (props) => (
   <AlertComp severity="warning" message={props.message} color="#E9BD1F" />
@@ -18,7 +18,6 @@ const Login = () => {
   const [error, setError] = useState();
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
-  // const auth = useContext(AuthContext);
 
   useEffect(() => {}, [password, email]);
   const loginClickHandler = async (e) => {
@@ -35,7 +34,6 @@ const Login = () => {
       setWarning('Please enter Password');
     } else {
       const { data, error } = await authenticate({ email, password }, setError);
-      // auth.verify();
       if (data) {
         window.location.href = '/';
       }

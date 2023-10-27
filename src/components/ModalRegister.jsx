@@ -7,7 +7,7 @@ import Modal from '@mui/material/Modal';
 import BootstrapButton from '../components/btnBlue';
 import TextField from '@mui/material/TextField';
 import Autocomplete from '@mui/material/Autocomplete';
-
+// hola es una prueba //
 const style = {
   position: 'absolute',
   top: '50%',
@@ -23,10 +23,8 @@ const style = {
   flexDirection: 'row',
   minWidth: '10px',
   maxWidth: '900px',
-
   p: -3
 };
-
 export default function BasicModal() {
   const [open, setOpen] = React.useState(false);
   const handleOpen = () => setOpen(true);

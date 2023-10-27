@@ -78,5 +78,4 @@ function BootstrapButton2() {
     </div>
   );
 }
-
 export default BootstrapButton2;
